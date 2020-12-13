@@ -1,0 +1,19 @@
+{
+  "name": "martin-fowler-refactoring-2ed",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --watch --recursive --require babel-core/register"
+  },
+  "dependencies": {
+    "eslint": "^5.12.1",
+    "js-money": "^0.6.3",
+    "sinon": "^7.3.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
