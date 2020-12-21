@@ -29,6 +29,7 @@ describe('statement', () => {
     ];
 
     it('should print a statement for multiple plays, single customer and mutiple sets in plain text',  () => {
+        console.log(statement(invoiceJson[0], playJson))
         expect(statement(invoiceJson[0], playJson));
     });
 })
