@@ -30,6 +30,11 @@ describe('statement', () => {
 
     it('should print a statement for multiple plays, single customer and mutiple sets in plain text',  () => {
         console.log(statement(invoiceJson[0], playJson))
-        expect(statement(invoiceJson[0], playJson));
+        expect(statement(invoiceJson[0], playJson)).to.equal('청구내역: (고객명: BigCo\n' +
+            ' Hamlet: $650.00 (55 석)\n' +
+            ' As You Like It: $580.00 (35 석)\n' +
+            ' Othello: $500.00 (40 석)\n' +
+            '총액: $1,730.00\n' +
+            '적립포인트: 47점\n');
     });
 })
